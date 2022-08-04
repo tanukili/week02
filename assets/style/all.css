@@ -50,6 +50,7 @@ table {
           box-sizing: border-box; }
 
 img {
+  vertical-align: middle;
   max-width: 100%;
   height: auto; }
 
@@ -58,6 +59,10 @@ body {
   font-style: italic;
   font-size: 24px;
   font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
 
 .container {
   max-width: 1200px;
@@ -78,11 +83,16 @@ h1 {
   line-height: 106px;
   font-weight: 900; }
 
+.title {
+  margin: 0 0 32px 0; }
+
 .subTitle {
   max-width: 283px; }
 
 .subTitle p {
-  line-height: 36px; }
+  line-height: 36px;
+  text-align: justify;
+  margin: 0 0 40px 0; }
 
 .subTitle ul {
   display: -webkit-box;
@@ -94,6 +104,8 @@ h1 {
 
 .header {
   background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 958px;
   display: -webkit-box;
@@ -110,31 +122,91 @@ h1 {
       -ms-flex-align: center;
           align-items: center; }
 
-.profile, .bg-style {
+.profile, .bg-style, .works {
   text-align: center; }
 
-.profile h2 {
+h2 {
   font-size: 64px;
   line-height: 84px; }
+
+.profile {
+  margin: 56px auto; }
+
+.profile img {
+  margin: 40px 0 0 0; }
 
 .profile li {
   line-height: 42px;
   font-weight: 700; }
+
+.profile img + ul {
+  padding: 20px 0; }
+
+.profile ul li + li {
+  padding: 4px 0; }
 
 .workEXP {
   max-width: 384px;
   border-top: 1px solid #000;
   margin: 0 auto; }
 
-.bg-style h2 {
-  font-size: 64px;
-  line-height: 84px; }
+.dot::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: #891818;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  margin: 0 16px 0 0; }
+
+.workEXP li {
+  margin: 28px 0 0 0; }
+
+.brand h2 {
+  padding: 56px 0 0 0;
+  margin: 0 0 12px 0; }
 
 .brand h3 {
-  line-height: 42px; }
+  line-height: 42px;
+  margin: 0 0 32px 0; }
 
 .brand p {
   font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 68px 0; }
+
+.impression {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.impression li {
+  margin: 0 0 40px 0; }
+
+.works p {
+  font-size: 20px;
   line-height: 30px; }
+
+.works li p {
+  line-height: 42px; }
+
+.works ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.footer p {
+  line-height: 36px; }
 
 /*# sourceMappingURL=all.css.map */
